@@ -38,7 +38,7 @@ const ProdutoDetalhes = () => {
       />
       <div>
         {produto.fotos.map((foto) => (
-          <img src={foto.src} alt={foto.titulo} />
+          <img key={foto.src} src={foto.src} alt={foto.titulo} />
         ))}
       </div>
       <div>
